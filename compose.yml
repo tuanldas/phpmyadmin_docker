@@ -9,8 +9,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:-root}
-    ports:
-      - 8080:80
     networks:
       - default
       - publish_net
